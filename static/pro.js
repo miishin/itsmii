@@ -1,9 +1,9 @@
 //https://happycoding.io/tutorials/p5js/animation/bouncing-line
 const FRAME_RATE = 50;
-const COLOR_VELOCITY = 25;
-const VELOCITY = 5;
+const COLOR_VELOCITY = 15;
+const VELOCITY = 10;
 const VELOCITY_CHANGE = 1;
-const MAX_VELOCITY = 10;
+const MAX_VELOCITY = 20;
 
 var r, g, b;
 var x1, y1, x2, y2;
@@ -64,7 +64,7 @@ function moveLine(){
 }
 
 function draw() {
-  if(frameCount == 1234) noLoop();
+  //if(frameCount == width * 10) noLoop();
   incrementColor();
   moveLine();
   line(x1, y1, x2, y2);

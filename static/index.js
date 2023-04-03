@@ -49,8 +49,7 @@ function setup() {
   const RED = color("#D8363F");
   const YELLOW = color("#F6D309");
   const TEAL = color("#00CECA");
-  const BLUE = color("#153580");
-  COLORS = [LIGHT_PINK, RED, YELLOW, TEAL, BLUE];
+  COLORS = [LIGHT_PINK, RED, YELLOW, TEAL];
   
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);

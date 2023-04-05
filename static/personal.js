@@ -1,4 +1,4 @@
-const VELOCITY = 5;
+const VELOCITY = 3;
 var x, y;
 var vx, vy;
 
@@ -11,8 +11,8 @@ function setup() {
   x = windowWidth / 2;
   y = windowHeight / 2;
   
-  vx = random(-VELOCITY, VELOCITY);
-  vy = random(-VELOCITY, VELOCITY);
+  vx = random() < 0.5 ? VELOCITY : -VELOCITY;
+  vy = random() < 0.5 ? VELOCITY : -VELOCITY;
   
   background("#F6D309");
   textSize(50);

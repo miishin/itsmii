@@ -10,3 +10,7 @@ def main():
 @app.route("/pro")
 def pro():
     return render_template('pro.html')
+
+@app.route("/personal")
+def personal():
+    return render_template('personal.html')

@@ -3,12 +3,20 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="personal.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
     <meta charset="utf-8" />
   </head>
   <body>
     <div id="content">
-      <a class="link" href="/likes">stuff that I like</a>
+      <div id="likes">
+        <span>stuff i like</span>
+        <a class="link" href="https://rateyourmusic.com/~miishin">music</a>
+        <a class="link" href="https://letterboxd.com/miishin/">movies</a>
+        <a class="link" href="https://anilist.co/user/miishin/">animanga</a>
+        <a class="link" href="https://trakt.tv/users/miishin/ratings/all/all/highest">television</a>
+        <a class="link" href="https://glitchwave.com/user/miishin/">video games</a>
+      </div>
+      <a class="link" href="https://rateyourmusic.com/~miishin">stuff that I like</a>
       <a class="link" href="https://flickr.com/people/141681852@N03/">I take photos sometimes</a>
     </div>
     <script src="personal.js"></script>

@@ -56,7 +56,9 @@ function setup() {
   points = [];
   var x, y;
   for(let i = 0; i < NUM_POINTS; i++) {
+    let segment = windowWidth / NUM_POINTS;
     x = roundCoordinate(random(i * (windowWidth/ NUM_POINTS), (i + 1) * (windowWidth / NUM_POINTS)));
+    x = Math.floor(x / PIXEL_SIZE) * PIXEL_SIZE;
     y = roundCoordinate(random(windowHeight));
     points.push(new Point(x, y, randomColor()));
   }

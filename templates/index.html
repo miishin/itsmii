@@ -4,12 +4,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/front.css') }}">
     <meta charset="utf-8" />
   </head>
   <body>
     <div id="content">
-      <a class="link" href="/personal">Personal</a>
-      <a class="link" href="/pro">Professional</a>
+      <span id="question">are you here to</span>
+      <span id="question">get to know me</span>
+      <br>
+      <a class="link" href="/personal">personally?</a>
+      <a class="link" href="/pro">professionally?</a>
     </div>
     <script src="{{ url_for('static', filename='index.js') }}"></script>
   </body>
